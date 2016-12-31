@@ -97,7 +97,8 @@ interface SalaryInterface
     public function getSalary(): float;
 }
 
-class FixedSalary implements SalaryInterface {
+class FixedSalary implements SalaryInterface 
+{
     private $amount;
 
     public function __construct(float $amount)
@@ -110,7 +111,8 @@ class FixedSalary implements SalaryInterface {
     }
 }
 
-class HourlySalary implements SalaryInterface {
+class HourlySalary implements SalaryInterface 
+{
     private $hours;
     private $amountPerHour;
 
